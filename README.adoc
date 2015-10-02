@@ -1,0 +1,20 @@
+== HiveMQ Black and Whitelist Example plugin
+
+This is an example plugin that show how you can easily implement custom authentication logic in HiveMQ.
+The plugin has 3 different callbacks, which demonstrate how to how implement custom authorization with HiveMQ.
+
+=== Blacklist Callback
+
+A callback that denies subscriptions to topics that start with "client/" with the exception of "client/<client id>".
+Everything else is allowed by this callback.
+
+=== Whitelist Callback
+
+A callback that allows each client to subscribe to "client/<client id>" and publishes on topics that start with "client".
+Everything else is denied.
+
+=== Next Callback
+
+A callback that allows publish and subscribe messages for topics that start with "debug/" and denies topics that starts with "system/".
+All other publishes and subscriptions are passed to the next callback.
+
