@@ -18,3 +18,11 @@ Everything else is denied.
 A callback that allows publish and subscribe messages for topics that start with "debug/" and denies topics that starts with "system/".
 All other publishes and subscriptions are passed to the next callback.
 
+= Contributing
+
+If you want to contribute to HiveMQ Authorization Blacklist Whitelist Example, see the link:CONTRIBUTING.md[contribution guidelines].
+
+= License
+
+HiveMQ Authorization Blacklist Whitelist Example is licensed under the `APACHE LICENSE, VERSION 2.0`. A copy of the license can be found link:LICENSE.txt[here].
+
